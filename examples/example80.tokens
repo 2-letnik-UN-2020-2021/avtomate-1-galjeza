@@ -1,0 +1,1 @@
+int("2") times("*") variable("aiDc") bwand("&") variable("mLigh") bwor("|") variable("Bert") times("*") lparen("(") hex("#fae9cB") times("*") int("5") plus("+") hex("#6f19ce") rparen(")") bwand("&") hex("#69192") times("*") int("5") bwor("|") int("1") times("*") variable("Gisse") bwor("|") int("1") 

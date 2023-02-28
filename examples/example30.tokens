@@ -1,0 +1,1 @@
+lparen("(") variable("rirtNt") plus("+") variable("t123") times("*") hex("#AFEf2e") rparen(")") times("*") int("4") 

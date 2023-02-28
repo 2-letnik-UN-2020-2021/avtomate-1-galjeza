@@ -1,0 +1,1 @@
+lparen("(") variable("G223") divide("/") lparen("(") int("5") minus("-") hex("#6Ffb") plus("+") hex("#6F19cB") plus("+") variable("Werch") times("*") hex("#fF09cB") bwand("&") int("1") times("*") variable("Rasg") times("*") variable("WaEEht") bwand("&") variable("gesch") bwand("&") variable("BLEcNt") rparen(")") minus("-") variable("Rorth") rparen(")") 

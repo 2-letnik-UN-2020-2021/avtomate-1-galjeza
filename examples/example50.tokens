@@ -1,0 +1,1 @@
+hex("#0f162") minus("-") variable("G") plus("+") variable("HLi123") bwand("&") variable("Rir") divide("/") lparen("(") hex("#e91fcc") rparen(")") plus("+") variable("Hai") divide("/") hex("#6e0b") 

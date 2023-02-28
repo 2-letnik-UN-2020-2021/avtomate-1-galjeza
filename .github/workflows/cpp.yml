@@ -1,0 +1,34 @@
+name: CPP
+
+on:
+  push:
+    branches: [master]
+    paths:
+        - ".github/workflows/cpp.yml"
+        - "cpp/**"       
+  workflow_dispatch:
+ 
+env:
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./cpp
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Install wdiff
+      run: sudo apt-get install -y wdiff
+
+    - name: Configure CMake
+      run: cmake -B ./build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+
+    - name: Build
+      run: cmake --build ./build --config ${{env.BUILD_TYPE}}
+      
+    - name: Test
+      run: ../test.sh
