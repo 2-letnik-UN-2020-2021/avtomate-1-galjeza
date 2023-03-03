@@ -1,0 +1,1 @@
+hex("#000f") plus("+") lparen("(") int("417549") times("*") lparen("(") lparen("(") int("4") rparen(")") plus("+") variable("aist") plus("+") variable("Had1") rparen(")") rparen(")") bwand("&") variable("H2") bwor("|") int("8") times("*") hex("#0fEE") bwand("&") lparen("(") int("5") rparen(")") 

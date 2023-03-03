@@ -1,0 +1,1 @@
+int("5") bwor("|") hex("#6e192") times("*") int("1") times("*") int("4") bwand("&") variable("W223") 

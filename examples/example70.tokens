@@ -1,0 +1,1 @@
+variable("gestht") bwand("&") variable("BiD") minus("-") lparen("(") int("2") rparen(")") plus("+") variable("moDge") times("*") lparen("(") lparen("(") variable("fastht") times("*") hex("#0Ff9cc") bwand("&") variable("r2") rparen(")") plus("+") variable("Bait") rparen(")") bwand("&") int("1") 
