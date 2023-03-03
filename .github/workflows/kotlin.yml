@@ -1,0 +1,28 @@
+name: Kotlin
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - ".github/workflows/kotlin.yml"
+      - "kotlin/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./kotlin
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Install wdiff
+        run: sudo apt-get install -y wdiff
+
+      - name: Build
+        run: gradle build
+        
+      - name: Test
+        run: ../test.sh
