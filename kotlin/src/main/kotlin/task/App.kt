@@ -130,6 +130,7 @@ object ForForeachFFFAutomaton: DFA {
         setTransition(1, '\r', 16)
         setTransition(1, '\n', 16)
         setTransition(1, ' ', 16)
+        //setTransition(16, '"', 16)
 
 
         setSymbol(15, EOF_SYMBOL)
@@ -218,7 +219,7 @@ fun name(symbol: Int) =
         PLUS_SYMBOL -> "plus"
         MINUS_SYMBOL -> "minus"
         TIMES_SYMBOL -> "times"
-        DIVIDE_SYMBOL -> "devide"
+        DIVIDE_SYMBOL -> "divide"
         BWAND_SYMBOL -> "bwand"
         BWOR_SYMBOL -> "bwor"
         LPAREN_SYMBOL -> "lparen"
@@ -235,6 +236,7 @@ fun printTokens(scanner: Scanner) {
 }
 
 fun main(args: Array<String>) {
+    //val testString = "( ((#ee1ED * f2 & 517549 + #fe0fc + #69EfBc ) + veEc3) + vest) / (mcUt3 * (#fae9Bc) + ( BEstN * ( (2 | 5 ) + (817549 - (#fF1fD ) & #ff0Ecc * #e909Bc )) * 1 + (2 ) ) ) * acrE * ted1 * (4 * #fFf9Be ) * 8"
     val file = File(args[0]).readText(Charsets.UTF_8)
     printTokens(Scanner(ForForeachFFFAutomaton, file.byteInputStream()))
 }
