@@ -126,10 +126,7 @@ object ForForeachFFFAutomaton: DFA {
         // EOF
         setTransition(1, EOF, 15)
 
-        setTransition(1, ' ', 1)
-        setTransition(1, '\t', 1)
-        setTransition(1, '\r', 1)
-        setTransition(1, '\n', 1)
+        
 
 
 
