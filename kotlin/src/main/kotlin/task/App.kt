@@ -1,5 +1,8 @@
+package task
+
 import java.io.File
 import java.io.InputStream
+
 
 const val ERROR_STATE = 0
 const val SKIP_SYMBOL = 0
