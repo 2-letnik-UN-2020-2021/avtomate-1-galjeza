@@ -34,7 +34,7 @@ interface DFA {
 }
 
 object ForForeachFFFAutomaton: DFA {
-    override val states = (1 .. 15).toSet()
+    override val states = (1 .. 16).toSet()
     override val alphabet = 0 .. 255
     override val startState = 1
     override val finalStates = setOf(
@@ -126,10 +126,10 @@ object ForForeachFFFAutomaton: DFA {
         // EOF
         setTransition(1, EOF, 15)
 
-        setTransition(1, ' ', 1)
-        setTransition(1, '\t', 1)
-        setTransition(1, '\r', 1)
-        setTransition(1, '\n', 1)
+        setTransition(1, '\t', 16)
+        setTransition(1, '\r', 16)
+        setTransition(1, '\n', 16)
+        setTransition(1, ' ', 16)
 
 
         setSymbol(15, EOF_SYMBOL)
@@ -145,6 +145,7 @@ object ForForeachFFFAutomaton: DFA {
         setSymbol(12, BWOR_SYMBOL)
         setSymbol(13, LPAREN_SYMBOL)
         setSymbol(14, RPAREN_SYMBOL)
+        setSymbol(16, SKIP_SYMBOL)
 
 
 
