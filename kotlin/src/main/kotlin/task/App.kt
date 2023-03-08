@@ -126,8 +126,10 @@ object ForForeachFFFAutomaton: DFA {
         // EOF
         setTransition(1, EOF, 15)
 
-        
-
+        setTransition(1, ' ', 1)
+        setTransition(1, '\t', 1)
+        setTransition(1, '\r', 1)
+        setTransition(1, '\n', 1)
 
 
         setSymbol(15, EOF_SYMBOL)
@@ -232,6 +234,6 @@ fun printTokens(scanner: Scanner) {
 }
 
 fun main(args: Array<String>) {
-    //val file = File(args[0]).readText(Charsets.UTF_8)
-    printTokens(Scanner(ForForeachFFFAutomaton, "5 * #69f9D".byteInputStream()))
+    val file = File(args[0]).readText(Charsets.UTF_8)
+    printTokens(Scanner(ForForeachFFFAutomaton, file.byteInputStream()))
 }
