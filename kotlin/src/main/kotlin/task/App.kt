@@ -1,3 +1,4 @@
+import java.io.File
 import java.io.InputStream
 
 const val ERROR_STATE = 0
@@ -225,5 +226,6 @@ fun printTokens(scanner: Scanner) {
 }
 
 fun main(args: Array<String>) {
-    printTokens(Scanner(ForForeachFFFAutomaton, "417549".byteInputStream()))
+    val file = File(args[0]).readText(Charsets.UTF_8)
+    printTokens(Scanner(ForForeachFFFAutomaton, file.byteInputStream()))
 }
